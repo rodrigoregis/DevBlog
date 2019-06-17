@@ -1,0 +1,25 @@
+<% include ./partials/header %>
+<header class="jumbotron text-center">
+	<h1>Veja todos os nossos Posts</h1>
+	<a class="btn btn-primary" href="/blog/new">Add Novo Post</a>
+</header>
+
+<div class="row showpage">
+	<% blog.forEach( (blog) => { %>
+	<header class="text-center text-warning">
+	   <h2><%= blog.title %></h2>
+	</header>
+	<div class="thumbnail text-center">
+		<img src="<%= blog.image %>">
+		<span><strong>Publicado em:</strong> <%= blog.created.toLocaleDateString('pt-BR') %></span>
+		<p><%- blog.body.substring(0, 98) %></p>
+		<a class="btn btn-primary" href="/blog/<%= blog._id %>">Mais Info</a>
+	</div>
+	
+<% }) %>
+</div>
+
+
+
+
+<% include ./partials/footer %>

@@ -1,0 +1,25 @@
+<% include ./partials/header %>
+
+<div class="container">
+	<div class="row text-center">
+		<div class="col-md-12">
+			<header>
+				<h2><%= blog.title %></h2>
+			</header>
+			<div class="thumbnail show-page text-center">
+				<img class="img-responsive" src="<%= blog.image %>">
+				<div class="full-caption text-center">
+				<span><strong>Publicado em: </strong><%= blog.created.toLocaleDateString('pt-BR') %></span>
+				<p><%- blog.body %></p>
+			</div>
+				
+				<a class="btn btn-success" href="/blog/<%= blog._id %>/edit">Editar</a>
+				<form id="delete" action="/blog/<%= blog._id %>?_method=DELETE" method="POST" >
+					<button class="btn btn-danger">Delete</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<% include ./partials/footer %>

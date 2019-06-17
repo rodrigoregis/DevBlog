@@ -1,0 +1,57 @@
+.navbar-inverse {
+    padding: 15px 0px;
+}
+
+.navbar-inverse .navbar-brand {
+    font-size: 2em;
+	color: orange;
+	transition: 0.5s easy;
+	padding: 12px 0px;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #fff;
+	font-size: 1.2em;
+	font-weight: 700;
+	letter-spacing: .2em;
+	transition: 0.5s easy;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+    color: orange;
+}
+
+.showpage {
+	width: 50%;
+	margin: 10px auto; 
+	height: 20%;
+}
+
+.thumbnail img {
+	margin: 12px auto;
+	width: 45%;
+}
+
+.show-page {
+	width: 60%;
+	margin: 0px auto;
+}
+
+#delete {
+	display: inline;
+}
+
+.fa-blog {
+	color: #fff;
+}
+
+footer {
+	background: #000;
+	text-align: center;
+	padding: 15px 0px;
+}
+
+footer p {
+	color: #fff;
+	font-size: 1.2em;
+}
